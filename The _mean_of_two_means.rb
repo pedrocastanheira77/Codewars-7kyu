@@ -1,12 +1,11 @@
 def mean_calculator array, elements
-  acm = 0
-  counter = 0
+  acm, counter = 0.0, 0.0
   array.each do |arr_element|
     break if counter >= elements
     acm += arr_element
     counter += 1
   end
-  acm.to_f/elements
+  acm/elements
 end
 
 def getMean arr, x, y
